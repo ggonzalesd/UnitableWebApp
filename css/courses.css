@@ -1,0 +1,77 @@
+main{
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main > section{
+  height: 100%;
+}
+
+.btn-perfil{
+  margin-left: 15%;
+}
+
+.btn-courses {
+  text-decoration: none;
+  display: block;
+
+  color: var(--color-primary2);
+
+  padding: 10px;
+  margin-top: 15px;
+  margin-left: 2%;
+  cursor: pointer;
+  text-align: center;
+
+  font-weight: bold;
+}
+
+.card{
+  width: 20%;
+  height: 280px;
+  margin-top: 30px;
+  /*margin-left: 30px;*/
+  background-color: var(--color-card-bg);
+  color: var(--color-primary2);
+  border: var(--color-secundary2) 2px solid;
+}
+
+.btn-card {
+  text-decoration: none;
+  display: block;
+  color: var(--color-primary2);
+  margin-top: 5px;
+  margin-left: 15.5%;
+  padding: 1% 1.7%;
+  position: absolute;
+  float: right;
+  cursor: pointer;
+  text-align: center;
+
+  font-weight: bold;
+}
+
+.flex-container{
+  display: flex;
+  padding: 10px 0px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.img-card{
+  width: 100%;
+}
+
+.title-card{
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.description-card{
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 12px;
+}
