@@ -65,6 +65,10 @@ header {
     font-weight: bold;
 }
 
+.btn-nav-profile {
+    margin-left: 60px;
+}
+
 .btn-secundary{
     background-color: var(--color-button2);
 }
