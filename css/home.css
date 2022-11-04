@@ -1,0 +1,37 @@
+main{
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main > section{
+    height: 100%;
+}
+
+.home-section{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    width: 50vw;
+}
+
+.home-main-phrase h2{
+    text-align: center;
+    font-size: 60px;
+    padding: 50px 0;
+    color: gray;
+}
+
+.home-main-phrase > div{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+
+}
+
+.main-logo{
+    filter: saturate(0) invert(1);
+    scale: 0.8;
+}
