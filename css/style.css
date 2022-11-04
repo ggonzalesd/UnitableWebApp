@@ -78,3 +78,15 @@ header {
 .btn-primary a{
     color: var(--color-primary2);
 }
+
+footer{
+    height: 80px;
+    background-color: var(--color-secundary2);
+    color: var(--color-primary2);
+    text-align: right;
+}
+
+footer p{
+    display: inline-block;
+    margin: 30px;
+}
