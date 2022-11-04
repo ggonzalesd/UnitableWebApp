@@ -1,0 +1,23 @@
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+}
+
+.form-main{
+    height: fit-content;
+    padding: 40px 0px;
+
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+
+    background-color: var(--color-primary);
+
+    align-items:center;
+}
