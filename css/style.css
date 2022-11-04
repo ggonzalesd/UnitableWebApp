@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root{
+    --color-primary: #c9dbff;
+    --color-button1: #005773;
+    --color-primary2: #FFFFFF;
+    --color-primary3: #920000;
+
+    --color-secundary: #3f4e6a;
+    --color-button2: #A0D1E0;
+    --color-secundary2: #000000;
+    --color-secundary3: #ffa800;
+}
