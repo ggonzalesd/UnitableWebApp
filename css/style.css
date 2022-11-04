@@ -15,3 +15,66 @@
     --color-secundary2: #000000;
     --color-secundary3: #ffa800;
 }
+
+header {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-primary);
+
+    height: 80px;
+    
+    overflow: hidden;
+}
+
+.header-title{
+    display: block;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navigation > ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-nav{
+    display: block;
+
+    height: 100%;
+    width: 120px;
+
+    box-sizing: content-box;
+}
+
+.btn-nav a{
+    text-decoration: none;
+    display: block;
+    
+    height: 100%;
+    width: 100%;
+
+    padding: 30px 0;
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.btn-secundary{
+    background-color: var(--color-button2);
+}
+
+.btn-secundary a{
+    color: var(--color-secundary2);
+}
+
+.btn-primary{
+    background-color: var(--color-button1);
+}
+
+.btn-primary a{
+    color: var(--color-primary2);
+}
