@@ -1,0 +1,127 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main > section {
+    height: 100%;
+}
+
+#groups-own {
+    display: flex;
+    flex-direction: column;
+}
+
+.groups-own-buttons{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.groups-own-buttons .btn {
+    margin: 5px;
+}
+
+.btn-crear{
+    color: var(--color-primary2);
+    background-color: var(--color-secundary);
+}
+
+.btn-grupos{
+    background-color: var(--color-button2);
+}
+
+#groups-own-list{
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+
+    overflow-x: scroll;
+}
+
+/*
+#groups-own-list::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+/* - - - - - - - - - */
+
+#groups-search{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box-container{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#groups-search-list{
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+
+    overflow-y: scroll;
+}
+
+/* - - - - - - - - - */
+
+
+.groups-item{
+    display: flex;
+    flex-direction: column;
+    max-height: min-content;
+    margin: 10px;
+}
+
+.description img{
+    width: 90px;
+    height: 90px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 2px
+}
+
+.groups-item .description{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    background-color: var(--color-button1);
+    color: var(--color-primary2);
+}
+
+.groups-item .description > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+
+.groups-item > div {
+    height: 100%;
+}
+
+.groups-item .information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-button2);
+    padding: 2px;
+}
+
+.btn-group {
+    background-color: var(--color-card-bg);
+    color: var(--color-primary2);
+    border-radius: 4px;
+}
