@@ -1,0 +1,98 @@
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-information{
+    width: 280px;
+    height: 90vh;
+    background-color: var(--color-button1);
+}
+
+.user-profile{
+    height: 300px;
+    background: url("/images/store-profile-bg.jpg");
+    background-size: 200%;
+
+    display: flex;
+    
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+}
+
+.user-profile > h3, .user-profile > p {
+    color: var(--color-primary2);
+}
+
+.profile-photo-container{
+    width: 140px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.profile-photo{
+    width: 140px;
+    height: 140px;
+}
+
+.store-areas{
+    width: 100%;
+    background-color: var(--color-primary2);
+}
+
+.user-money{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.user-money p {
+    color: var(--color-primary2);
+}
+
+/* - - - - - - - - - - */
+
+.store-areas{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.store-area{
+    height: 100%;
+}
+
+.store-area h3 {
+    margin: 10px;
+}
+
+.store-area .store-container{
+    margin: 0px 20px;
+    width: calc(100% - 40px);
+    max-width: 80vw;
+    height: 82%;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow: scroll;
+}
+
+.store-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.card-item{
+    width: 200px;
+    height: 100px;
+    border: 1px solid;
+
+
+}
