@@ -1,0 +1,52 @@
+.btn-ok{
+    background-color: var(--color-button1);
+    color: var(--color-primary2);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.buttons-area{
+    padding: 5px;
+}
+
+.schedule-area{
+    display: grid;
+    height: 80vh;
+    background-color: var(--color-primary2);
+    gap: 2px;
+
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 120px;
+
+    overflow-y: scroll;
+}
+
+.schedule-area::-webkit-scrollbar {
+    display: none;
+}
+
+
+.schedule-day, .schedule-hour{
+    background-color: var(--color-card-bg);
+}
+
+.schedule-block {
+    color: var(--color-primary2);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-note{
+    background-color: var(--color-gray1);
+    color: var(--color-primary2);
+}
+
+.schedule-hour{
+    grid-column-start: 1;
+}
