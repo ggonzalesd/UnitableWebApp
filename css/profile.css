@@ -1,0 +1,160 @@
+.btn-premium{
+    position: absolute;
+    float: right;
+    right: 0;
+    margin: 5px;
+}
+
+.profile-information{
+    display: flex;
+    height: 220px;
+
+    background: url("/images/wallpaper.jpg") repeat 100px;
+
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.profile-photo-container{
+    width: 150px;
+    height: 150px;
+}
+
+.profile-photo{
+    height: 150px;
+}
+
+.profile-information-info{
+    margin-left: 20px;
+}
+
+.profile-information-info h3, .profile-information-info p{
+    color: var(--color-primary2);
+}
+
+/* - - - - - - - - */
+
+.profile-data{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-data > * {
+    flex: 1fr 1fr 1fr;
+    width: 100%;
+    height: 350px;
+    border: 1px solid lightgray;
+}
+
+.profile-sections h3{
+    text-align: center;
+    font-size: x-large;
+}
+
+/* - - - - - - - - */
+
+
+.profile-sections > div {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.profile-sections{
+    overflow: scroll;
+}
+
+.profile-sections::-webkit-scrollbar{
+    display: none;
+}
+
+.contact-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    flex: 1fr 1fr;
+    margin: 10px 10px;
+    width: min(20vw, 200px);
+    height: 80px;
+    background-color: var(--color-button1);
+}
+
+.contact-cards img {
+    width: 80px;
+    height: 80px;
+}
+
+.contact-cards > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-cards > div > p {
+    color: var(--color-primary2);
+    font-weight: bold;
+}
+
+.activity-cards{
+
+    width: min(20vw, 180px);
+    margin: 10px 10px;
+    height: 80px;
+    background-color: var(--color-button1);
+    color: var(--color-primary2);
+    flex: 1fr 1fr;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.activity-cards > h4 {
+    margin-left: 10px;
+}
+
+.activity-cards > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.group-cards{
+    width: min(20vw, 200px);
+    margin: 10px 10px;
+    height: 80px;
+    background-color: var(--color-button1);
+    color: var(--color-primary2);
+    flex: 1fr 1fr;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: small;
+}
+
+.group-cards img {
+    width: 80px;
+    height: 80px;
+}
+
+.group-cards > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 4px;
+}
+
+.group-cards > div > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.group-cards .tag{
+    background-color: var(--color-primary3);
+    margin-left: 10px;
+}
