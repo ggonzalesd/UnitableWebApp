@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/schedule.css">
+    <title>Unitable</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">
+            UniTable
+        </h1>
+
+        <nav class="navigation">
+            <ul>
+                <li class="btn-nav btn-secundary"><a href="#">Cursos</a></li>
+                <li class="btn-nav btn-primary"><a href="#">Horarios</a></li>
+                <li class="btn-nav btn-secundary"><a href="#">Grupos</a></li>
+                <li class="btn-nav btn-secundary"><a href="#">Tienda</a></li>
+                <li class="btn-nav"></li>
+                <li class="btn-nav btn-primary"><a href="/signin.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section class="section-area buttons-area">
+            <button class="btn btn-ok">Agregar Recordatorio</button>
+        </section>
+
+        <section id="schedule-area" class="section-area schedule-area">
+            <div></div>
+            <div class="schedule-block schedule-day">Domingo</div>
+            <div class="schedule-block schedule-day">Lunes</div>
+            <div class="schedule-block schedule-day">Martes</div>
+            <div class="schedule-block schedule-day">Miercoles</div>
+            <div class="schedule-block schedule-day">Jueves</div>
+            <div class="schedule-block schedule-day">Viernes</div>
+            <div class="schedule-block schedule-day">Sabado</div>
+            <div class="schedule-block schedule-hour"><span>6:00 AM</span></div>
+            <div class="schedule-block schedule-hour"><span>7:00 AM</span></div>
+            <div class="schedule-block schedule-hour"><span>8:00 AM</span></div>
+            <div class="schedule-block schedule-hour"><span>9:00 AM</span></div>
+            <div class="schedule-block schedule-hour"><span>10:00 AM</span></div>
+            <div class="schedule-block schedule-hour"><span>11:00 AM</span></div>
+            <div class="schedule-block schedule-hour"><span>12:00 PM</span></div>
+            <div class="schedule-block schedule-hour"><span>1:00 PM</span></div>
+
+            <div class="schedule-block schedule-note"hours="2 2,3"><span>Estudiar</span></div>
+        </section>
+
+    </main>
+   
+    <footer>
+            <p>UniTable 2022</p>
+    </footer>
+    
+    <script src="js/unitable-title.js"></script>
+    <script src="js/schedule.js"></script>
+</body>
+</html>
