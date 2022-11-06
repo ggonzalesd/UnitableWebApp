@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/groups.css">
+    <title>Unitable</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">
+            UniTable
+        </h1>
+
+        <nav class="navigation">
+            <ul>
+                <li class="btn-nav btn-secundary"><a href="#">Cursos</a></li>
+                <li class="btn-nav btn-secundary"><a href="#">Horarios</a></li>
+                <li class="btn-nav btn-primary"><a href="#">Grupos</a></li>
+                <li class="btn-nav btn-secundary"><a href="#">Tienda</a></li>
+                <li class="btn-nav"></li>
+                <li class="btn-nav btn-primary"><a href="/signin.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="groups-own">
+            <div class="groups-own-buttons">
+                <button class="btn btn-grupos">Tus Grupos</button>
+                <button class="btn btn-crear">Crear</button>
+            </div>
+            <div  id="groups-own-list">
+                <div class="groups-item">
+                    <div class="description">
+                        <img src="images/groups-icon.jpg" alt="">
+                        <div>
+                            <h4>Grupo #1</h4>
+                            <p>Description</p>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="tag btn-premium">10K</div>
+                        <span>Miembros</span>
+                        <button class="btn btn-group">OK</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="groups-search">
+            <div class="search-box-container">
+                <div class="search-box">
+                    <input class="search-box-text" type="text" placeholder="¿Qué quieres buscar?">
+                    <button class="btn btn-search">Buscar</button>
+                </div>
+            </div>
+            <div id="groups-search-list">
+                <div class="groups-item">
+                    <div class="description">
+                        <img src="images/groups-icon.jpg" alt="">
+                        <div>
+                            <h4>Grupo #1</h4>
+                            <p>Description</p>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="tag btn-premium">10K</div>
+                        <span>Miembros</span>
+                        <button class="btn btn-group">OK</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>UniTable 2022</p>
+    </footer>
+
+    <script src="js/unitable-title.js"></script>
+    <script src="js/group.js"></script>
+</body>
+</html>
