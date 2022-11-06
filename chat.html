@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <title>Unitable</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">
+            UniTable
+        </h1>
+
+        <nav class="navigation">
+            <ul>
+                <li class="btn-nav btn-secundary"><a href="#">Cursos</a></li>
+                <li class="btn-nav btn-secundary"><a href="#">Horarios</a></li>
+                <li class="btn-nav btn-primary"><a href="#">Grupos</a></li>
+                <li class="btn-nav btn-secundary"><a href="#">Tienda</a></li>
+                <li class="btn-nav"></li>
+                <li class="btn-nav btn-primary"><a href="/signin.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="section-channels">
+            <h3>
+                Nombre del grupo
+            </h3>
+            <div class="channels">
+                <div class="list-channels text-channels">
+                    <div class="channel text-channel">
+                        <span>Anuncios</span>
+                        <button class="btn">+90</button>
+                    </div>
+                    <div class="channel text-channel">
+                        <span>General</span>
+                        <button class="btn">+90</button>
+                    </div>
+                    <div class="channel text-channel">
+                        <span>Moderadores</span>
+                        <button class="btn">+90</button>
+                    </div>
+                </div>
+                <div class="list-channels audio-channels">
+                    <div class="channel audio-channel">
+                        <span>Sala #1</span>
+                        <button class="btn">+90</button>
+                    </div>
+                    <div class="channel audio-channel">
+                        <span>Sala #2</span>
+                        <button class="btn">+90</button>
+                    </div>
+                    <div class="channel audio-channel">
+                        <span>Sala #3</span>
+                        <button class="btn">+90</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-buttons">
+                <button class="btn">Crear Sala</button>
+            </div>
+
+        </section>
+        <section class="chat text-chat" style="display:none">
+            <div id="messages" class="messages">
+                <div class="message">
+                    <div class="user-message">
+                        <img src="images/profile-photo.jpg" alt="">
+                        <span>Username</span>
+                    </div>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla accusamus, vitae excepturi animi error soluta provident odit corrupti atque voluptatibus ab necessitatibus autem deleniti tempora consequatur aliquam quod magnam.
+                    </p>
+                </div>
+            </div>
+            <div class="text-box">
+                <img src="images/profile-photo.jpg" alt="">
+                <input type="text" placeholder="Escribe algo">
+                <button class="btn">Send</button>
+            </div>
+        </section>
+        <section class="chat audio-chat">
+            <div class="media-images">
+                <img src="images/profile-photo.jpg" alt="">
+            </div>
+            <div class="media-controlls">
+                <button class="btn controll controll-microphone">M</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>UniTable 2022</p>
+    </footer>
+
+    <script src="js/unitable-title.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
