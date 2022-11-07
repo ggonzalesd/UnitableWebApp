@@ -62,5 +62,21 @@ for(let i=0; i<numberOfGroups; i++){
     secProGroupsList.innerHTML += text
 }
 
+// section-profile-premium
+
+let obtener = true
+
+const btnPremium = document.getElementById("btn-premium")
+btnPremium.addEventListener("click", ()=>{
+    if(obtener === true){
+        obtener = false
+        btnPremium.innerText = "Cancelar Premium"
+        btnPremium.style["backgroundColor"] = "green"
+    } else{
+        obtener = true
+        btnPremium.innerText = "Obtener Premium"
+        btnPremium.style["backgroundColor"] = ""
+    }
+})
 
 })()
