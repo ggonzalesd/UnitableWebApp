@@ -13,7 +13,7 @@ const secProContactList = secProContact.children.item(1)
 
 for(let i=0; i<numberOfContacts; i++){
     const text = `<div class="contact-cards">
-    <img src="/images/profile-contact-photo.jpg" alt="contact">
+    <img src="images/profile-contact-photo.jpg" alt="contact">
     <div>
         <div class="tag tag-profile">Estudiante</div>
         <p>Nombre</p>
@@ -50,7 +50,7 @@ const secProGroupsList = secProGroups.children.item(1)
 
 for(let i=0; i<numberOfGroups; i++){
     const text = `<div class="group-cards">
-    <img src="/images/group-icon.jpg" alt="group">
+    <img src="images/group-icon.jpg" alt="group">
     <div>
         <p>Grupo Dev</p>
         <div>
