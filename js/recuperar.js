@@ -5,11 +5,11 @@ const btnIntentar = document.querySelector("#form-btn-intentar")
 
 
 btnRecuperar.addEventListener("click", ()=>{
-    window.location.href = "/login.html"
+    window.location.href = "login.html"
 })
 
 btnIntentar.addEventListener("click", ()=>{
-    window.location.href = "/login.html"
+    window.location.href = "login.html"
 })
 
 })()
