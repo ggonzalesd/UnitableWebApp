@@ -43,7 +43,7 @@ const btnsGroup = document.getElementsByClassName("btn-group")
 
 for(let i=0; i<btnsGroup.length; i++){
     btnsGroup[i].addEventListener("click", ()=>{
-        window.location.href = "/chat.html"
+        window.location.href = "chat.html"
     })
 }
 
