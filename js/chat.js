@@ -14,4 +14,27 @@ for(let i=0; i<12; i++){
     </div>`
 }
 
+const chatContainer = document.getElementById("chat-container")
+
+const textChannels = document.getElementsByClassName("channel text-channel")
+const audioChannels = document.getElementsByClassName("channel audio-channel")
+
+const textChat = chatContainer.children[1]
+const audioChat = chatContainer.children[2]
+
+for(let i=0; i<textChannels.length; i++){
+    textChannels[i].addEventListener("click", ()=>{
+        textChat.style['display'] = ''
+        audioChat.style['display'] = 'none'
+    })
+}
+
+for(let i=0; i<audioChannels.length; i++){
+    audioChannels[i].addEventListener("click", ()=>{
+        textChat.style['display'] = 'none'
+        audioChat.style['display'] = ''
+    })
+}
+
+
 })()
