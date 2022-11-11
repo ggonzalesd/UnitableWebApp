@@ -1,0 +1,160 @@
+main{
+    display: flex;
+
+    height: 90vh;
+}
+
+.section{
+    height: 100%;
+    width: 100%;
+}
+
+#section-tree{
+    width: 250px;
+    background-color: var(--color-secundary);
+}
+
+.tree-tema{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.tree-tema-header{
+    display: flex;
+}
+
+.tema-title{
+    display: flex;
+    align-items: center;
+    color: var(--color-primary2);
+    width: calc(100% - 30px);
+
+    background-color: var(--color-button1);
+
+    border: 2px solid black;
+
+    box-sizing: border-box;
+}
+
+.tema-title > h3 {
+    margin: auto;
+    text-align: center;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-button2);
+    border-radius: 50%;
+    border: 2px solid
+}
+
+.circle > span {
+    font-size: small;
+    font-weight: bolder;
+}
+
+.tree-subtema{
+    display: flex;
+    margin: 5px 0px;
+}
+
+.tree-subtema-path{
+    width: 30px;
+    height: 30px;
+    background-image: url(../svg/path-svg.svg);
+}
+
+.tree-subtema:last-child .tree-subtema-path{
+    background-image: url(../svg/path-end.svg);
+}
+
+.tree-subtema-button{
+    display: flex;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    cursor: pointer;
+}
+
+.tree-subtema-button:hover{
+    background-color: var(--color-card-bg);
+}
+
+.tree-subtema-button:hover .tree-subtema-title span {
+    color: var(--color-button2);
+}
+
+.tree-subtema-button-checked {
+    background-color: var(--color-button2);
+}
+
+.tree-subtema-button-checked span {
+    color: var(--color-secundary);
+}
+
+.tree-subtema-title{
+    display: flex;
+    align-items: center;
+    color: var(--color-button2);
+}
+
+/* - - - - - - - - - */
+
+#section-ruta{
+    background-color: var(--color-button2);
+}
+
+.nav-ruta{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px;
+}
+
+.subtema-title-container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn-reto{
+    display: flex;
+    background-color: var(--color-primary3);
+    color: var(--color-primary2);
+
+    align-items: center;
+}
+
+/* - - - */
+
+.parrafos{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 70px);
+
+    padding: 0px 20px;
+
+    overflow-y: scroll;
+}
+
+.parrafo{
+    display: flex;
+    margin: 10px 0px;
+}
+
+.text{
+    text-align: justify;
+    padding: 5px;
+}
+
+.image {
+    display: flex;
+    background-color: white;
+    border: 2px solid gray;
+}
