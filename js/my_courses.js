@@ -22,7 +22,7 @@
 
     for(let i=0; i<btnsIngresar.length; i++){
         btnsIngresar[i].addEventListener("click", ()=>{
-            window.location.href = "courses.html"
+            window.location.href = "ruta.html"
         })
     }
     

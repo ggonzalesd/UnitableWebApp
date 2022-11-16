@@ -45,7 +45,14 @@
             }
         })
     }
-    
+
+    const btnsIngresar = document.getElementsByClassName("btn-card")
+
+    for(let i=0; i<btnsIngresar.length; i++){
+        btnsIngresar[i].addEventListener("click", ()=>{
+            window.location.href = "ruta.html"
+        })
+    }
 
     const btnMyCourses = document.getElementById("btn-my-courses")
 

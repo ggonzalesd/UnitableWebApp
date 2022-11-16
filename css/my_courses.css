@@ -39,4 +39,5 @@
     background-color: var(--color-secundary);
     font-size: x-large;
     font-weight: bold;
+    cursor: pointer;
 }
