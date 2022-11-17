@@ -12,7 +12,28 @@
     <title>Unitable</title>
 </head>
 <body>
-    <header>
+    <!--This div will toggle its visibility depending if the user wants to create a new activity or not-->
+    <div id="create-activity">
+        <form class="form-actividad">
+            <h1>Actividad</h1>
+            <div class="form-inputs-list">
+                <div class="form-input">
+                    <div><label>Nombre de la actividad</label></div>
+                    <div><input type="text" id="activity-name" placeholder="Placeholder"></div>
+                </div>
+                <div class="form-input">
+                    <div><label>Descripción</label></div>
+                    <div><textarea id="descripcion" placeholder="Placeholder"></textarea></div>
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button type="button" id="form-btn-crear" class="btn btn-form btn-form-ok">Crear</button>
+                <button type="button" id="form-btn-cancelar" class="btn btn-form btn-form-cancel">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <header id="header">
         <h1 class="header-title">
             UniTable
         </h1>
@@ -29,10 +50,10 @@
         </nav>
     </header>
     
-    <main>
+    <main id="main">
 
         <section class="section-area buttons-area">
-            <button class="btn btn-ok">Agregar Recordatorio</button>
+            <button class="btn btn-ok" id="add-activity">Agregar Recordatorio</button>
         </section>
 
         <section id="schedule-area" class="section-area schedule-area">
@@ -58,7 +79,7 @@
 
     </main>
    
-    <footer>
+    <footer id="footer">
             <p>UniTable 2022</p>
     </footer>
     

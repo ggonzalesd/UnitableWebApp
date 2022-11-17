@@ -33,8 +33,7 @@ const positionOnGrid = (element, row, c_start, c_end)=>{
     element.style['grid-column'] = row + "/" + row
 }
 
-for(let i=0; i<notes.length; i++){
-    let note = notes[i]
+const checkNote = (note) => {
     if (note.hasAttribute('hours')){
         const coords = note.getAttribute('hours').split(" ")
         if(coords.length == 2){
@@ -51,7 +50,64 @@ for(let i=0; i<notes.length; i++){
     }
 }
 
+for(let i=0; i<notes.length; i++){
+    checkNote(notes[i])
+}
 
+const btnAddActivity = document.getElementById("add-activity")
+const divActivityForm = document.getElementById("create-activity")
+const header = document.getElementById("header")
+const main = document.getElementById("main")
+const footer = document.getElementById("footer")
 
+btnAddActivity.addEventListener("click", ()=>{
+    header.style["filter"] = "blur(4px)"
+    main.style["filter"] = "blur(4px)"
+    footer.style["filter"] = "blur(4px)"
+    divActivityForm.style["visibility"] = "visible";
+})
+
+const HideActivityForm = () => {
+    activityName = document.getElementById("activity-name")
+    description = document.getElementById("descripcion")
+
+    activityName.value = ""
+    description.value = ""
+
+    header.style["filter"] = ""
+    main.style["filter"] = ""
+    footer.style["filter"] = ""
+}
+
+const btnCreate = document.getElementById("form-btn-crear")
+btnCreate.addEventListener("click", ()=>{
+    // Add a new activity
+    activityName = document.getElementById("activity-name")
+    description = document.getElementById("descripcion") // Discarded for now
+
+    hourPrueba = [activityName.value, 4, 3, 5]
+
+    const element = document.createElement("div")
+    const span = document.createElement("span")
+    span.innerText = hourPrueba[0]
+    element.className += "schedule-block schedule-note"
+    element.setAttribute("hours", `${hourPrueba[1]} ${hourPrueba[2]},${hourPrueba[3]}`)
+    element.appendChild(span)
+
+    container.appendChild(element)
+
+    checkNote(notes[notes.length-1])
+
+    // Then quit
+    divActivityForm.style["visibility"] = "hidden";
+    HideActivityForm()
+})
+
+const btnCancel = document.getElementById("form-btn-cancelar")
+btnCancel.addEventListener("click", ()=>{
+    // Simply quit
+    divActivityForm.style["visibility"] = "hidden";
+    HideActivityForm()
+})
 
 })()
