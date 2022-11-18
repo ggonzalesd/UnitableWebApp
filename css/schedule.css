@@ -98,3 +98,14 @@ main{
     height: 200px;
     resize: none;
 }
+
+.form-input .location-params {
+    width: 10%;
+}
+
+#warning-zone {
+    padding: 10px;
+    background-color: var(--color-secundary3);
+    visibility: hidden;
+    max-width: 85%;
+}

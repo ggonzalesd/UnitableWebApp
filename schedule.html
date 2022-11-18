@@ -19,13 +19,22 @@
             <div class="form-inputs-list">
                 <div class="form-input">
                     <div><label>Nombre de la actividad</label></div>
-                    <div><input type="text" id="activity-name" placeholder="Placeholder"></div>
+                    <div><input type="text" id="activity-name" placeholder="Placeholder" required></div>
                 </div>
                 <div class="form-input">
                     <div><label>Descripción</label></div>
                     <div><textarea id="descripcion" placeholder="Placeholder"></textarea></div>
                 </div>
+                <div class="form-input">
+                    <div>
+                        <label>Día / Inicio / Fin</label>
+                        <input type="text" class="location-params" id="day" required>
+                        <input type="text" class="location-params" id="hour-start" required>
+                        <input type="text" class="location-params" id="hour-end" required>
+                    </div>
+                </div>
             </div>
+            <div id="warning-zone"></div>
             <div class="form-buttons">
                 <button type="button" id="form-btn-crear" class="btn btn-form btn-form-ok">Crear</button>
                 <button type="button" id="form-btn-cancelar" class="btn btn-form btn-form-cancel">Cancelar</button>

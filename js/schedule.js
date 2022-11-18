@@ -71,12 +71,24 @@ const HideActivityForm = () => {
     activityName = document.getElementById("activity-name")
     description = document.getElementById("descripcion")
 
+    warningDiv = document.getElementById("warning-zone")
+
+    txtDay = document.getElementById("day")
+    txtHourStart = document.getElementById("hour-start")
+    txtHourEnd = document.getElementById("hour-end")
+
     activityName.value = ""
     description.value = ""
 
     header.style["filter"] = ""
     main.style["filter"] = ""
     footer.style["filter"] = ""
+    warningDiv.innerText = ""
+    warningDiv.style["visibility"] = "hidden";
+
+    txtDay.value = ""
+    txtHourStart.value = ""
+    txtHourEnd.value = ""
 }
 
 const btnCreate = document.getElementById("form-btn-crear")
@@ -84,8 +96,66 @@ btnCreate.addEventListener("click", ()=>{
     // Add a new activity
     activityName = document.getElementById("activity-name")
     description = document.getElementById("descripcion") // Discarded for now
+    txtDay = document.getElementById("day")
+    txtHourStart = document.getElementById("hour-start")
+    txtHourEnd = document.getElementById("hour-end")
 
-    hourPrueba = [activityName.value, 4, 3, 5]
+    warningDiv = document.getElementById("warning-zone")
+
+    // We make sure the activity HAS a name
+    if (activityName.value === "") {
+        warningDiv.style["visibility"] = "visible";
+        warningDiv.innerText = "La actividad debe tener un nombre"
+        return
+    }
+
+    // We make sure all schedule inputs have a value
+    valDay = txtDay.value
+    valHourStart = txtHourStart.value
+    valHourEnd = txtHourEnd.value
+    if (valDay === "" || valHourStart === "" || valHourEnd === "") {
+        warningDiv.style["visibility"] = "visible";
+        warningDiv.innerText = "Parametros de horario no completados"
+        return
+    }
+    
+    // Now we make sure all these inputs are numeric
+    const isNumeric = (txt) => {
+        return !isNaN(txt)
+    }
+    
+    if (!isNumeric(valDay) || !isNumeric(valHourStart) || !isNumeric(valHourEnd)) {
+        warningDiv.style["visibility"] = "visible";
+        warningDiv.innerText = "Uno o más valores NO son numéricos"
+        return
+    }
+    day = +valDay + 1
+    hourStart = +valHourStart + 1
+    hourEnd = +valHourEnd + 1
+    console.log("Día: " + (day-1))
+    console.log("Hora inicio: " + (hourStart-1))
+    console.log("Hora fin: " + (hourEnd-1))
+
+    // Finally, we make sure the values are between
+    if (!(1 <= (day-1) && (day-1) <= 7)) {
+        warningDiv.style["visibility"] = "visible";
+        warningDiv.innerText = "El rango permitido para el día es de 1 a 7"
+        return
+    }
+
+    if (!(1 <= (hourStart-1) && (hourStart-1) < (hourEnd-1))) {
+        warningDiv.style["visibility"] = "visible";
+        warningDiv.innerText = "El rango permitido para la hora de inicio es de 1 hasta la hora fin"
+        return
+    }
+
+    if (!((hourStart-1) < (hourEnd-1) && (hourEnd-1) <= 8)) {
+        warningDiv.style["visibility"] = "visible";
+        warningDiv.innerText = "El rango permitido para la hora de inicio es de la hora inicio hasta 8"
+        return
+    }
+    
+    hourPrueba = [activityName.value, day, hourStart, hourEnd]
 
     const element = document.createElement("div")
     const span = document.createElement("span")
@@ -109,5 +179,4 @@ btnCancel.addEventListener("click", ()=>{
     divActivityForm.style["visibility"] = "hidden";
     HideActivityForm()
 })
-
-})()
+})() 
