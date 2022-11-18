@@ -125,3 +125,56 @@ main > section {
     color: var(--color-primary2);
     border-radius: 4px;
 }
+
+#create-group {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+
+    z-index: 100;
+
+    visibility: hidden;
+}
+
+.form-group {
+    height: fit-content;
+    padding: 10px 0px;
+
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+
+    background-color: var(--color-primary);
+
+    align-items:center;
+}
+
+.form-inputs-list {
+    justify-content: left;
+    width: calc(100% - 30px);
+}
+
+.form-group input {
+    width: 100%;
+}
+
+.form-input .location-params {
+    width: 10%;
+}
+
+#warning-zone {
+    padding: 10px;
+    background-color: var(--color-secundary3);
+    visibility: hidden;
+    max-width: 85%;
+}

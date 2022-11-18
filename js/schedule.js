@@ -136,7 +136,7 @@ btnCreate.addEventListener("click", ()=>{
     console.log("Hora inicio: " + (hourStart-1))
     console.log("Hora fin: " + (hourEnd-1))
 
-    // Finally, we make sure the values are between
+    // Finally, we make sure the values are between accepted ranges
     if (!(1 <= (day-1) && (day-1) <= 7)) {
         warningDiv.style["visibility"] = "visible";
         warningDiv.innerText = "El rango permitido para el día es de 1 a 7"

@@ -12,7 +12,33 @@
     <title>Unitable</title>
 </head>
 <body>
-    <header>
+    <!--This div will toggle its visibility depending if the user wants to create a new activity or not-->
+    <div id="create-group">
+        <form class="form-group">
+            <h1>Grupo</h1>
+            <div class="form-inputs-list">
+                <div class="form-input">
+                    <div><label>Nombre del grupo</label></div>
+                    <div><input type="text" id="nombre-grupo" placeholder="Placeholder" required></div>
+                </div>
+                <div class="form-input">
+                    <div><label>Descripción</label></div>
+                    <div><input type="text" id="descripcion" placeholder="Placeholder"></div>
+                </div>
+                <div class="form-input">
+                    <div><label>Tema</label></div>
+                    <div><input type="text" id="tema" placeholder="Placeholder"></div>
+                </div>
+            </div>
+            <div id="warning-zone"></div>
+            <div class="form-buttons">
+                <button type="button" id="form-btn-crear" class="btn btn-form btn-form-ok">Crear</button>
+                <button type="button" id="form-btn-cancelar" class="btn btn-form btn-form-cancel">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <header id="header">
         <h1 class="header-title">
             UniTable
         </h1>
@@ -29,11 +55,11 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <section id="groups-own">
             <div class="groups-own-buttons">
                 <button class="btn btn-grupos">Tus Grupos</button>
-                <button class="btn btn-crear">Crear</button>
+                <button class="btn btn-crear" id="btn-crear">Crear</button>
             </div>
             <div  id="groups-own-list">
                 <div class="groups-item">
@@ -78,7 +104,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <p>UniTable 2022</p>
     </footer>
 
