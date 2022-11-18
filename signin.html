@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +12,64 @@
     <link rel="stylesheet" href="css/signin.css">
     <title>Unitable</title>
 </head>
+
 <body>
-    <header>
+    <div id="div_terms">
+        <form class="form-terms">
+            <h1>Terminos y Condiciones</h1>
+            <div class="form-inputs-list">
+                <div class="form-input">
+                    <p>
+                        El presente contrato describe los términos y condiciones aplicables al uso del contenido y
+                        servicios del sitio web UniTable del cual es titular MicroDev Corp. Para hacer uso del contenido
+                        y servicios del sitio web el usuario debera sujetarse a los presentes términos y condiciones.
+                    </p>
+                    <ul >
+                        <li>Para usar nuestra página web y / o recibir nuestros servicios, debes tener al menos 12
+                            años de edad y poseer la autoridad legal, el derecho y la libertad para participar en estos
+                            Términos como un acuerdo vinculante. No tienes permitido utilizar esta página web y / o
+                            recibir servicios si hacerlo está prohibido en tu país o en virtud de cualquier ley o
+                            regulación aplicable a tu caso.</li>
+
+                        <li>Podemos terminar o suspender de manera permanente o temporal tu acceso al servicio si a
+                            nuestra sola determinación tu violas alguna disposición de estos Términos o cualquier ley o
+                            regulación aplicable. Con respecto a las suscripciones renovadas automáticamente a los
+                            servicios pagados, dichas suscripciones se suspenderán solo al vencimiento del período
+                            correspondiente por el que ya has realizado el pago.</li>
+
+                        <li>Usted acuerda indemnizar y eximir de responsabilidad a UniTable de cualquier demanda,
+                            pérdida, responsabilidad, reclamación o gasto (incluidos los honorarios de abogados) que
+                            terceros realicen en tu contra como consecuencia de, o derivado de, o en relación con tu uso
+                            de la página web o cualquiera de los servicios ofrecidos en la página web.</li>
+
+                        <li>Nos reservamos el derecho de modificar estos términos de vez en cuando a nuestra entera
+                            discreción. Por lo tanto, debes revisar estas páginas periódicamente. Cuando cambiemos los
+                            Términos de una manera material, te notificaremos que se han realizado cambios importantes
+                            en los Términos. El uso continuado de la página web o nuestro servicio después de dicho
+                            cambio constituye tu aceptación de los nuevos Términos. Si no aceptas alguno de estos
+                            términos o cualquier versión futura de los Términos, no uses o accedas (o continúes
+                            accediendo) a la página web o al servicio.</li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button type="button" id="form-btn-close" class="btn btn-form btn-form-cancel">Cerrar</button>
+            </div>
+        </form>
+    </div>
+
+    <header id="header">
         <h1 class="header-title">
             UniTable
         </h1>
     </header>
-    
-    <main>
 
+    <main id="main">
+        <div class="side-check">
+
+        </div>
         <div class="form-home">
             <h3 class="form-title">Únete</h3>
             <div class="form-inputs">
@@ -34,21 +84,25 @@
                 <div class="form-input">
                     <label>Contraseña</label>
                     <input type="text">
+
                 </div>
+                <input type="checkbox" id="accept_terms" name="accept_terms">
+                <label id="terms-lbl" style="font-size: 14px;">Aceptar Terminos y Condiciones</label>
             </div>
             <div class="form-buttons">
                 <button id="form-btn-unete" class="btn btn-form btn-form-ok">Únete</button>
                 <button id="form-btn-tengocuenta" class="btn btn-form btn-form-cancel">Tengo Cuenta</button>
             </div>
-        </form>
-        
+            </form>
+
     </main>
-   
-    <footer>
-            <p>UniTable 2022</p>
+
+    <footer id="footer">
+        <p>UniTable 2022</p>
     </footer>
 
     <script src="js/signin.js"></script>
     <script src="js/unitable-title.js"></script>
 </body>
+
 </html>
