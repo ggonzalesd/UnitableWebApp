@@ -12,7 +12,33 @@
     <title>Unitable</title>
 </head>
 <body>
-    <header>
+    <!--This div will toggle its visibility depending whether the user wants to create a new room or not-->
+    <div id="create-room">
+        <form class="form-room">
+            <h1>Sala</h1>
+            <div class="form-inputs-list">
+                <div class="form-input">
+                    <div><label>Nombre de la sala</label></div>
+                    <div><input type="text" id="nombre-sala" placeholder="Placeholder" required></div>
+                </div>
+                <div class="form-input">
+                    <div><label>Descripción</label></div>
+                    <div><input type="text" id="descripcion" placeholder="Placeholder"></div>
+                </div>
+                <div class="form-input">
+                    <div><label>Tema</label></div>
+                    <div><input type="text" id="tema" placeholder="Placeholder"></div>
+                </div>
+            </div>
+            <div id="warning-zone"></div>
+            <div class="form-buttons">
+                <button type="button" id="form-btn-crear" class="btn btn-form btn-form-ok">Crear</button>
+                <button type="button" id="form-btn-cancelar" class="btn btn-form btn-form-cancel">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <header id="header">
         <h1 class="header-title">
             UniTable
         </h1>
@@ -36,7 +62,7 @@
                 Nombre del grupo
             </h3>
             <div class="channels">
-                <div class="list-channels text-channels">
+                <div class="list-channels text-channels" id="text-channel">
                     <div class="channel text-channel">
                         <span>Anuncios</span>
                         <button class="btn">+90</button>
@@ -65,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ch-buttons">
+            <div class="ch-buttons" id="btn-create-room">
                 <button class="btn">Crear Sala</button>
             </div>
 
@@ -99,7 +125,7 @@
 
     </main>
 
-    <footer>
+    <footer id="footer">
         <p>UniTable 2022</p>
     </footer>
 

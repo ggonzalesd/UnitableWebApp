@@ -17,7 +17,7 @@ const addNewGroup = (elem, name, description) => {
             </div>
         </div>
         <div class="information">
-            <div class="tag btn-premium">10K</div>
+            <div class="tag btn-premium">0</div>
             <span>Miembros</span>
             <button class="btn btn-group">OK</button>
         </div>
@@ -57,7 +57,11 @@ for(let i=0; i<btnsGroup.length; i++){
     })
 }
 
-const HideActivityForm = () => {
+const header = document.getElementById("header")
+const main = document.getElementById("main")
+const footer = document.getElementById("footer")
+
+const HideGroupForm = () => {
     groupName = document.getElementById("nombre-grupo")
     description = document.getElementById("descripcion")
     topic = document.getElementById("tema")
@@ -107,19 +111,19 @@ btnCreate.addEventListener("click", ()=>{
         return
     }
 
-    // We finally generate the new activity
+    // We finally generate the new group
     addNewGroup(groupsOwnList, txtGroupName.value, txtDescription.value)
 
     // Then quit
     divGroupForm.style["visibility"] = "hidden";
-    HideActivityForm()
+    HideGroupForm()
 })
 
 const btnCancel = document.getElementById("form-btn-cancelar")
 btnCancel.addEventListener("click", ()=>{
     // Simply quit
     divGroupForm.style["visibility"] = "hidden";
-    HideActivityForm()
+    HideGroupForm()
 })
 
 })()

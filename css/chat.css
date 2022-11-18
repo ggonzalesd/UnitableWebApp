@@ -191,3 +191,52 @@ main{
     height: 40px;
     margin-right: 20px;
 }
+
+#create-room {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+
+    z-index: 100;
+
+    visibility: hidden;
+}
+
+.form-room {
+    height: fit-content;
+    padding: 10px 0px;
+
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+
+    background-color: var(--color-primary);
+
+    align-items:center;
+}
+
+.form-inputs-list {
+    justify-content: left;
+    width: calc(100% - 30px);
+}
+
+.form-room input {
+    width: 100%;
+}
+
+#warning-zone {
+    padding: 10px;
+    background-color: var(--color-secundary3);
+    visibility: hidden;
+    max-width: 85%;
+}
