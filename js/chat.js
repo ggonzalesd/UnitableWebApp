@@ -42,7 +42,7 @@ const footer = document.getElementById("footer")
 
 const addRoom = (elem, name) => {
     elem.innerHTML += `
-    <div class="channel text-channel">
+    <div class="channel audio-channel">
         <span>${name}</span>
         <button class="btn">0</button>
     </div>
@@ -101,7 +101,7 @@ btnCreate.addEventListener("click", ()=>{
     }
 
     // We finally generate the new room
-    addRoom(document.getElementById("text-channel"), txtRoomName.value)
+    addRoom(document.getElementById("audio-channels"), txtRoomName.value)
 
     // Then quit
     divRoomForm.style["visibility"] = "hidden";
